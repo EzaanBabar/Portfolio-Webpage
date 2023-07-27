@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.logo {
+    font-size: 32px;
+    color: rgb(110, 194, 213);
+    font-weight: bold;
+    padding: 8px;
+    animation: fadeIn 1s;
+    animation: sliderRight 1.5s;
+   
+}
+.wave{
+  display: inline-block;
+  animation: hand-wave 500ms infinite ease-in-out;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    padding: 0px 16px;
+    background-color: rgb(49, 55, 57);
+}
+.navContainer{
+  max-width:1050px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+    color:     rgb(110, 194, 213);
+    font-size: 20px;
+    font-weight:bold;
+    transition: 600ms; /* Transition removed from 'a' selector */
+    text-decoration: none;
+    position:relative;
+}
+a:after{
+  content:'';
+  width:0;
+  height:3px;
+  background: linear-gradient(
+    to right,
+    rgb(210, 166, 105),rgb(239, 99, 48)
+  );
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition:0.5s;
+}
+a:hover::after
+{
+  width:100%;
+}
+ul {
+    display: flex;
+    padding-left: 10px;
+}
+
+li{
+    list-style: none;
+    padding-left: 30px;
+    animation: fadeIn 1s;
+    animation: sliderLeft 1.5s;
+
+}
+
+header {
+  background: linear-gradient(
+    rgb(184, 229, 239),
+    rgb(248, 247, 247),
+    rgb(231, 238, 240)
+
+  );
+  height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(16, 14, 14);
+}
+
+h1 {
+    font-size: 60px;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 10px;
+    animation: sliderLeft 1.5s;
+} 
+
+ p {
+  font-size: 30px;
+  color: rgb(240, 157, 69);
+  font-weight: bold;
+  border: right 3px solid;
+  animation: sliderRight 1.5s,typing 5.5s, cursor .4s step-end infinite alternate;
+  width:100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position:relative;
+
+}
+p:after{
+  content:'';
+  width:0;
+  height:5px;
+  background-color: black;    
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition:2s;
+}
+p:hover:after
+{
+  width:100%;
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.leftContent{
+  width:50%;
+}
+/* Keyframes for the animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.rightContent {
+  width: 200px;
+  animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out; /* Combining keyframe animations */
+
+}
+
+/* Add this style to make the image smaller */
+.rightContent img {
+  max-width: 160%; /* Set the maximum width to the container width */
+  height: auto; 
+  border-radius:50%;
+  animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out; /* Combining keyframe animations */
+  border: solid  rgb(48, 199, 237) 4px;
+  animation: glow .8s infinite alternate-reverse;
+  
+}
+
+@keyframes glow {
+  100% {
+    box-shadow: 0 0 200px rgba(5, 253, 253, 0.942);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes sliderRight
+{
+  from {
+    transform: translatex(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes sliderLeft
+{
+  from {
+    transform: translatex(700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes cursor {
+  100% {
+    border-color: red;
+  }
+}
+@keyframes hand-wave{
+
+  0%{
+    transform:rotate(0);
+  }
+  50%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
