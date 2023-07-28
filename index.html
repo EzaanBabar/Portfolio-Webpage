@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+>
 
 <head>
   <meta charset="UTF-8">
@@ -13,30 +14,56 @@
   <section>
     <nav>
       <div class="navContainer">
-      <div class="logo">Ezaan Babar</div>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projets">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <div class="nav__name">Ezaan Babar</div>
+        <ul>
+          <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projets">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
-    <header>
-      <div class="introduction">
-        <div class="container">
-          <div class="leftContent">
-            <h1>Hello <span class="wave">👋</span>, I am Ezaan Babar </h1>
-            <div class="paraWrapper">
-            <p>A FRONTEND DEVELOPER </p>
+    <header class="dark-mode">
+      <div class="header__introduction">
+        <div class="header__container">
+          <div class="header__leftContent">
+            <h1 class ="dark-mode">Hello <span class="wave">👋</span>, I am Ezaan Babar </h1>
+            <div class="header__paraWrapper">
+              <p class = "header__para">A FRONTEND DEVELOPER </p>
+            </div>
           </div>
-          </div>
-          <div class="rightContent">
+          <div class="header__rightContent">
             <img src="lol.PNG" alt="">
           </div>
         </div>
       </div>
       </div>
     </header>
+
+    <section id="about">
+      <div class="about__container">
+        <div class="about__row">
+          <div class="about"> about me </div>
+          <div class="about_leftSide">
+          <p class ="about_para">Front-end developer currently pursuing Computer Science at the University of Texas at Dallas
+            (UTD). I find joy in crafting beautiful and interactive user experiences on the web. With a strong
+            foundation in programming and design, I'm constantly seeking opportunities to push the boundaries of what's
+            possible in the digital realm.
+            Aside from my love for coding, I have a few other passions that keep me motivated and balanced. I'm an
+            automobile enthusiast, always fascinated by the latest advancements in car technology. When I'm not immersed
+            in the world of code, you can often find me at the gym, where weightlifting serves as a perfect outlet for
+            my energy and determination.
+            My positive and enthusiastic outlook on life fuels my drive to learn and grow as a developer. I believe in
+            the power of collaboration and enjoy working with others to create impactful projects. Let's connect and
+            explore new possibilities together!
+          </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </section>
+  <script src="script.js"></script>
+</body>
 
 </html>
