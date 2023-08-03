@@ -8,6 +8,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* COLORS */
+:root{
+  --lightBackground:
+    linear-gradient( rgb(184, 229, 239),
+    rgb(248, 247, 247),
+    rgb(231, 238, 240));
+
+  --darkBackground:
+  linear-gradient( rgb(41, 44, 45),
+  rgb(31, 119, 182),
+  rgba(12, 4, 240, 0.553));
+}
 /* NAV */
 :root{
   --lightBackground:
@@ -19,7 +32,6 @@ html {
   linear-gradient( rgb(41, 44, 45),
   rgb(31, 119, 182),
   rgba(12, 4, 240, 0.553));
-
 }
 .nav__name {
     font-size: 32px;
@@ -28,7 +40,6 @@ html {
     padding: 8px;
     animation: fadeIn 1s;
     animation: sliderRight 1.5s;
-   
 }
 nav {
   display: flex;
@@ -55,6 +66,7 @@ a {
     text-decoration: none;
     position:relative;
 }
+
 a:after{
   content:'';
   width:0;
@@ -110,6 +122,8 @@ h1{
 h1.dark-mode{
   color:white;
 }
+
+
  .header__para {
   font-size: 30px;
   color: rgb(240, 157, 69);
@@ -175,18 +189,14 @@ button:active{
   justify-content: center;
   align-items: center;
   height:50vh;
-  background: linear-gradient(
-  
-  rgb(231, 238, 240),
-  rgb(72, 180, 219)
-  );
-  
+  background:linear-gradient( rgba(12, 4, 240, 0.553), rgb(31, 119, 182))
 }
 .about
 {
   font-size:60px;
   font-weight: bold;
   animation: sliderLeft 2s;;
+  color:white;
 }
 .about__row{
   display: flex;
