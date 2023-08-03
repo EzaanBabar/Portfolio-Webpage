@@ -36,7 +36,9 @@ nav {
   height: 70px;
   padding: 0px 16px;
   background-color: rgb(49, 55, 57);
+ 
 }
+
 .navContainer{
 max-width:1050px;
 width:100%;
@@ -152,12 +154,19 @@ button{
   background: none;
   border: none;
   font-size: 20px;
-  color: rgb(110, 194, 213);
+  color:orange;
   font-weight: bold;
   animation: fadeIn 1s;
   animation: sliderLeft 1.5s;
 cursor: pointer;
+}
+button:hover{
   
+
+  transition:.3s;
+}
+button:active{
+  transform: translateY(10px);
 }
 /* ABOUT */
 
