@@ -183,20 +183,26 @@ button:active{
   transform: translateY(10px);
 }
 /* ABOUT */
-
-.about__container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.aboutWrapper{
+  background:linear-gradient( rgba(12, 4, 240, 0.553), rgb(31, 119, 182));
   height:50vh;
-  background:linear-gradient( rgba(12, 4, 240, 0.553), rgb(31, 119, 182))
 }
-.about
+.about__container{
+  width:100%;
+  max-width:1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__header
 {
   font-size:60px;
   font-weight: bold;
   animation: sliderLeft 2s;;
   color:white;
+  margin-bottom: 30px;
+ 
 }
 .about__row{
   display: flex;
@@ -205,9 +211,14 @@ button:active{
   height:50vh;
 }
 .about_para{
-  color :rgb(240, 157, 69);
+  color :rgb(232, 232, 232);
   font-size:24px;
   font-weight:bold;
+  letter-spacing: 2;
+}
+.about__para__bold{
+  color:orange;
+  font-weight: bold;
 }
 /* ANIMATIONS */
 
