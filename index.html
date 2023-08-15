@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"
->
+<html lang="en">
+
 
 <head>
   <meta charset="UTF-8">
@@ -10,61 +10,149 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
   <section>
     <nav>
       <div class="navContainer">
-        <div class="nav__name">Ezaan Babar</div>
+        <div> <a class="nav__name" href="#mainPage">Ezaan Babar</a></div>
         <ul>
           <button onclick="toggleDarkMode()">Theme</button>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projets">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav__rightSide" href="#about">About Me</a></li>
+          <li><a class="nav__rightSide" href="#languages">Technologies</a></li>
+          <li><a class="nav__rightSide" href="#Projects">Projects</a></li>
         </ul>
       </div>
     </nav>
-    <header class="dark-mode">
-      <div class="header__introduction">
-        <div class="header__container">
-          <div class="header__leftContent">
-            <h1 class ="dark-mode">Hello <span class="wave">👋</span>, I am Ezaan Babar </h1>
-            <div class="header__paraWrapper">
-              <p class = "header__para">A FRONTEND DEVELOPER </p>
+
+
+    <section id="mainPage">
+      <header class="dark-mode">
+        <div class="header__introduction">
+          <div class="header__container">
+            <div class="header__leftContent">
+              <h1 class="dark-mode">Hello <span class="wave">👋</span>, I am Ezaan Babar </h1>
+              <div class="header__paraWrapper">
+                <p class="header__para">A FRONTEND DEVELOPER </p>
+              </div>
+              <div class="resume__contactWrapper">
+                <a href="resume.pdf" target="_blank"><button class="resume__letsTalk__button"> Resume</button></a>
+                <button class="resume__letsTalk__button">Let's Talk</button>
+              </div>
+            </div>
+            <div class="header__rightContent">
+              <img src="lol.PNG" alt="">
             </div>
           </div>
-          <div class="header__rightContent">
-            <img src="lol.PNG" alt="">
-          </div>
         </div>
-      </div>
-      </div>
-    </header>
-
-    <section id="about">
-      <div class="aboutWrapper">
+        </div>
+      </header>
+    </section>
+    <section id="about" class="dark-mode">
       <div class="about__container">
         <div class="about__row">
           <div class="about_leftSide">
-         <div class="about__header"> about me </div>
-          <p class ="about_para">Front-end developer currently pursuing <span class = "about__para__bold">Computer Science</span> at the University of Texas at Dallas
-            . I find joy in crafting beautiful and interactive user experiences on the web. With a strong
-            foundation in programming and design, I'm constantly seeking opportunities to push the boundaries of what's
-            possible in the digital realm.
-            Aside from my love for coding, I have a few other passions that keep me motivated and balanced. I'm an
-            automobile enthusiast 🏎️ always fascinated by the latest advancements in car technology. When I'm not immersed
-            in the world of code, you can often find me at the gym, where weightlifting serves as a perfect outlet for
-            my energy and determination.
-            My positive and enthusiastic outlook on life fuels my drive to learn and grow as a developer. I believe in
-            the power of collaboration and enjoy working with others to create impactful projects.
-          </p>
+            <div class="about"> About Me <span class="about__colorAccent"> ... </span> </div>
           </div>
+          <p class="about_para">
+            I am a front end developer pursuing a degree in <span class="about__colorAccent"> Computer Science </span>
+            at the University of Texas at Dallas.
+            I find joy in creating <span class="about__colorAccent"> websites</span> and programming tech that makes our
+            lives that much better. As an <span class="about__colorAccent">entreprenear</span>,
+            I use my web development skills to freelance web-development to <span class="about__colorAccent">local
+              businesses</span>.
+          </p>
         </div>
       </div>
-    </div>
+      </div>
 
-    </section>
-  </section>
-  <script src="script.js"></script>
+
+      <section id="languages">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">This is my <span class=language__colorAccent>technology stack</span></h2>
+            <div class="language__list">
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                    alt="Html Logo" class="language__img" />
+                </figure>
+                <span class="language__name">HTML</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">CSS</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">JavaScript</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                    alt="TypeScript Logo" class="language__img" />
+                </figure>
+                <span class="language__name">TypeScript</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">Vue</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="Nuxt Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">Nuxt</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">React</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img src="https://mobx.js.org/img/mobx.png" alt="MobX Logo" class="language__img" />
+                </figure>
+                <span class="language__name">MobX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="Projects">
+        <div class="projects__container">
+          <div class="projects__row">
+            <h3 class="projects__title">Here is some of my <span class=projects__colorAccent>work</span></h3>
+            <ul class="project__list">
+              <li class="project">
+                <div class="project__wrapper">
+                  <img src="example.png" class="project__img" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
+
+      </section>
+      <script src="script.js"></script>
 </body>
+
 
 </html>
