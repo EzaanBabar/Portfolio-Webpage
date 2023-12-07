@@ -17,6 +17,9 @@ header {
   overflow-x: hidden;
 
 }
+body{
+  background-color: #1c1d25;
+}
 
 /* NAV */
 :root {
@@ -299,7 +302,7 @@ button.resume__letsTalk__button:hover {
   transition: all 400ms;
   background-color:#1c1d25;
 }
-.contact--open button.resume__letsTalk__button{
+.contact--open .resume__letsTalk__button {
   opacity:0;
   z-index:0;
 }
@@ -790,6 +793,7 @@ footer {
   }
 
   /*about*/
+
   .about__container {
     display: flex;
     justify-content: center;
