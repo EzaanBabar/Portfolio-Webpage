@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ezaan Babar</title>
   <link rel="icon" href="coding.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
-
 
 <body>
   <section>
     <nav>
       <div class="navContainer">
         <div> <a class="nav__name" href="#mainPage">Ezaan Babar</a></div>
-        <ul>
-          <!--<button onclick="toggleDarkMode()">Theme</button>-->
-          <li><a class="nav__rightSide" href="#about">About Me</a></li>
-          <li><a class="nav__rightSide" href="#languages">Technologies</a></li>
-          <li><a class="nav__rightSide" href="#Projects">Projects</a></li>
-        </ul>
+        <div class="nav_Right">
+          <ul>
+            <li><a class="nav__rightSide" href="#about">About Me</a></li>
+            <li><a class="nav__rightSide" href="#languages">Technologies</a></li>
+            <li><a class="nav__rightSide" href="#Projects">Projects</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-
 
     <section id="mainPage">
       <header class="dark-mode">
         <div class="header__introduction">
           <div class="header__container">
+            <div class="contact">
+              <div class="contact_title_container">
+                <p class = "contact__title">Lets get connected</p>
+                <button class = "contact_close" onclick ="toggle_contact()">X</button>
+
+                <!--
+                <div class="apple">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter name" name="uname" required>
+                  
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                  <button type="submit">Login</button>
+                
+                </div>
+                -->
+            
+              </div>
+            </div>
+           
+  
             <div class="header__leftContent">
               <h1 class="dark-mode">Hello <span class="wave">👋</span>, I am Ezaan Babar </h1>
               <div class="header__paraWrapper">
                 <p class="header__para">A WEB DEVELOPER </p>
               </div>
               <div class="resume__contactWrapper">
-                <a href="resume.pdf" target="_blank"><button class="resume__letsTalk__button"> Resume</button></a>
-                <a href="ezaan0801@gmail.com" target="_blank"><button class="resume__letsTalk__button">Let's
-                    Talk</button></a>
+                <a href="resume.pdf" target="_blank">
+                  <button class="resume__letsTalk__button"> Resume</button></a>
+                  <button class="resume__letsTalk__button" onclick ="toggle_contact()">Let's
+                    Talk</button>
               </div>
             </div>
             <div class="header__rightContent">
@@ -47,9 +70,9 @@
           </div>
         </div>
         </div>
+   
       </header>
     </section>
-
 
     <section id="about" class="dark-mode">
       <div class="about__container">
@@ -69,7 +92,6 @@
         </div>
       </div>
       </div>
-
 
       <section id="languages">
         <div class="container">
@@ -109,7 +131,6 @@
                 <figure class="language__img--wrapper">
                   <img src="Java2.png" alt="JavaLogo" class="language__img" />
 
-
                 </figure>
                 <span class="language__name">Java</span>
               </div>
@@ -137,7 +158,6 @@
         </div>
       </section>
 
-
       <section id="Projects">
         <div class="projects__container">
           <div class="projects__row">
@@ -147,23 +167,21 @@
                 <div class="project__wrapper">
                   <img src="gmw.jpeg" class="project__img" alt="">
                   <div class="project__description">
-                    <h3 class="project__description__title">German Motor Works Webpage</h3>
-                    <h4 class="project__description__subtitle">
-                      HTML CSS Javascript
+                    <div class="project__description__row">
+                      <h3 class="project__description__title">German Motor Works Webpage</h3>
+                      <h4 class="project__description__subtitle">
+                        HTML CSS Javascript
 
+                        <p class="project__description__para">
+                          A fully responsive car service webpage which features multiple features such as a schedule an
+                          appointment section, services section, and This website is in the building phase and will be
+                          released for German Motor
+                          Works, a car service buisiness specializing in German vehicles.
 
-                      <p class="project__description__para">
-                        A fully responsive car service webpage which features multiple features such as a schedule an
-                        appointment section, services section, and This website is in the building phase and will be
-                        released for German Motor
-                        Works, a car service buisiness specializing in German vehicles.
-
-
-                      </p>
+                        </p>
+                    </div>
                   </div>
-                  <div class="project__description__links">
-                    <a href="https://github.com/EzaanBabar/Portfolio-Webpage"></a>
-                  </div>
+                 
                 </div>
           </div>
           </li>
@@ -177,6 +195,5 @@
       </section>
       <script src="script.js"></script>
 </body>
-
 
 </html>
