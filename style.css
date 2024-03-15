@@ -439,12 +439,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .projects__row {
   width: 100%;
   max-width: 1000px;
-
 }
 
 .projects__colorAccent {
@@ -496,6 +496,8 @@ h2 {
 
 .project__list {
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project__description {

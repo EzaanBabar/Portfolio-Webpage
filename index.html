@@ -31,16 +31,16 @@
           <div class="header__container">
             <div class="contact">
               <div class="contact_title_container">
-                <p class = "contact__title">Lets get connected</p>
-                <button class = "contact_close" onclick ="toggle_contact()">X</button>
+                <p class="contact__title">Lets get connected</p>
+                <button class="contact_close" onclick="toggle_contact()">X</button>
 
                 <!---->
-               
-            
+
+
               </div>
             </div>
-           
-  
+
+
             <div class="header__leftContent">
               <h1 class="dark-mode">Hello <span class="wave">👋</span>, I am Ezaan Babar </h1>
               <div class="header__paraWrapper">
@@ -49,8 +49,8 @@
               <div class="resume__contactWrapper">
                 <a href="resume.pdf" target="_blank">
                   <button class="resume__letsTalk__button"> Resume</button></a>
-                  <button class="resume__letsTalk__button" onclick ="toggle_contact()">Let's
-                    Talk</button>
+                <button class="resume__letsTalk__button" onclick="toggle_contact()">Let's
+                  Talk</button>
               </div>
             </div>
             <div class="header__rightContent">
@@ -59,7 +59,7 @@
           </div>
         </div>
         </div>
-   
+
       </header>
     </section>
 
@@ -118,7 +118,7 @@
               </div>
               <div class="language">
                 <figure class="language__img--wrapper">
-                  <img src="Java2.png" alt="JavaLogo" class="language__img" />
+                  <img src="java2.png" alt="JavaLogo" class="language__img" />
 
                 </figure>
                 <span class="language__name">Java</span>
@@ -152,36 +152,65 @@
           <div class="projects__row">
             <h3 class="projects__title">Here is some of my <span class=projects__colorAccent>work</span></h3>
             <ul class="project__list">
-              <li class="project">
-                <div class="project__wrapper">
-                  <img src="gmw.jpeg" class="project__img" alt="">
+              <div class="project_1">
+              <li class="project" onclick="handleWrapperClick()">
+                <div class="project__wrapper" > 
+                  <img src="gmw5.png" class="project__img" alt="">
                   <div class="project__description">
                     <div class="project__description__row">
                       <h3 class="project__description__title">German Motor Works Webpage</h3>
                       <h4 class="project__description__subtitle">
-                        HTML CSS Javascript
+                        Framer | HTML | CSS | Javascript | Amazon Web Services
 
                         <p class="project__description__para">
-                          A fully responsive car service webpage which features multiple features such as a schedule an
-                          appointment section, services section, and This website is in the building phase and will be
-                          released for German Motor
-                          Works, a car service buisiness specializing in German vehicles.
-
+                          A fully responsive car service webpage for GMW Motorworks. The website features a vehicle
+                          section, services section, and schedule section. The theme is a modern look which focuses on
+                          minimalism without comprimising design. Utalized Email JS API for the buisiness to recieve and automate emails.
                         </p>
                     </div>
                   </div>
-                 
                 </div>
+              </li>
+            </div>
+
+            <div class="project_2"> 
+              <li class="project" onclick="handleWrapperClick2()">
+                <div class="project__wrapper">
+                  <img src="jc.jpg" class="project__img" alt="">
+                  <div class="project__description">
+                    <div class="project__description__row">
+                      <h3 class="project__description__title">JC Auto Detail Webpage</h3>
+                      <h4 class="project__description__subtitle">
+                        Framer | HTML | CSS | Javascript | Amazon Web Services
+
+                        <p class="project__description__para">
+                        A fully responsive auto detail service website for JC - Auto Detail. Collaborated with the client to create
+                        a luxurious website that can attract customers. The website uses OrbisX, a software designed for scheduling for Auto
+                        Detailers. Utalized Email JS Api for the buisiness to recieve emails via the Contact Section.
+                          
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+
+
+            </ul>
           </div>
-          </li>
-          </ul>
         </div>
-        </div>
-        </div>
-        <footer>
-          Ezaan Babar
-        </footer>
+
+
+
+
+
+
+
+
+
       </section>
+      <footer>
+        Ezaan Babar
+      </footer>
       <script src="script.js"></script>
 </body>
 
