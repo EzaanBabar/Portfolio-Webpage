@@ -38,7 +38,8 @@ body{
   --darkBackgroundStack: linear-gradient(rgb(31, 119, 182), rgb(239, 188, 48));
 
   --darkBackgroundProjects: linear-gradient(rgb(239, 188, 48), rgb(255, 157, 0));
-  --peach: color:#EEA47F
+  --peach: color:#EEA47F;
+  --darkBackgroundContact: linear-gradient(rgb(255, 157,48), rgb(241, 74, 13));
 }
 
 a.nav__name {
@@ -250,7 +251,7 @@ button.resume__letsTalk__button:hover {
 
 /*Contact*/
 
-.contact{
+/* .contact{
   opacity:0;
   position:absolute;
   transform: translate(-50,-50);
@@ -305,7 +306,7 @@ button.resume__letsTalk__button:hover {
 .contact--open .resume__letsTalk__button {
   opacity:0;
   z-index:0;
-}
+} */
 
 
 /* ABOUT */
@@ -354,7 +355,6 @@ h2 {
   color: rgb(255, 255, 255);
   font-size: 40px;
   padding-bottom: 15px;
-
 }
 
 .language__colorAccent {
@@ -545,6 +545,90 @@ h2 {
   text-align: left;
 
 }
+
+/*Lets talk*/
+.contact_container{
+ background:  var(--darkBackgroundContact);
+ height:300px;
+ height:auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.contact_title_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1.contact_title{
+  color:white;
+  font-size:50px;
+}
+.contact_accent{
+  color:rgb(104, 172, 232);
+}
+
+.contact_box{
+  height:auto;
+  padding:30px;
+  background-color: #1c1d25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:870px;
+  border-radius: 15px;
+  margin-bottom:60px;
+  margin-top:40px;
+  height:350px;
+}
+
+.contact_name{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:420px;
+
+}
+form{
+  height:80%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width:450px;
+
+}
+label{
+  color: rgb(255, 255, 255);
+  font-size:20px;
+  margin-right:5px;
+}
+#name, #email, #message{
+  height:45px;
+  border:solid rgb(255, 255, 255) 2px;
+  background-color: rgb(47, 46, 44);
+  border-radius: 8px;
+  width: 195px;
+  transition: 200ms;
+/* }0828 */
+}
+#name:hover, #email:hover, #message:hover{
+  border:solid rgb(255, 140, 0) 2px;
+  transition: 200ms;
+}
+#email{
+ width:400px;
+}
+#message{
+  width:400px;
+  height:100px;
+}
+
+
+
 
 /*FOOTER*/
 
